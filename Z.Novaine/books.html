@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Books - Z. Novaine</title>
+<meta name="description" content="Books by Z. Novaine, including Forsaken: To Bleed for Her and Void & Valor.">
+<link rel="icon" href="images/logo.png" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,400&family=Cinzel:wght@600;700&family=Literata:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-ambient" aria-hidden="true"></div>
+<div class="hero-bg" aria-hidden="true"></div>
+<div class="hero-clouds" aria-hidden="true"></div>
+<div class="embers" aria-hidden="true">
+  <span class="ember"></span>
+  <span class="ember"></span>
+  <span class="ember"></span>
+  <span class="ember"></span>
+  <span class="ember"></span>
+  <span class="ember"></span>
+  <span class="ember"></span>
+</div>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-mark">Z. NOVAINE</a>
+    <div class="nav-links">
+      <a href="index.html">About</a>
+      <a href="books.html" aria-current="page">Books</a>
+      <a href="fragments.html">Fragments</a>
+    </div>
+  </div>
+</nav>
+
+<div id="page-content">
+
+<header class="books-hero wrap">
+  <span class="eyebrow">The books</span>
+  <h1>Two worlds, one pen.</h1>
+</header>
+
+<main class="wrap">
+
+  <!-- ============================================
+       BOOK ENTRY — duplicate this whole <article> block
+       for each new book. Only edit the parts marked below.
+       ============================================ -->
+  <article class="book-entry">
+    <div class="book-cover-slot">
+      <!-- 1. Change the image path to your cover file -->
+      <img src="covers/forsaken-cover.png" alt="Forsaken: To Bleed for Her cover">
+      <!-- Keep this placeholder text matching the path above -->
+      <div class="cover-placeholder" style="display:none;">Add cover image at<br>covers/forsaken-cover.jpg</div>
+    </div>
+    <div class="book-content">
+      <!-- 2. Volume label and genre -->
+      <span class="eyebrow">Vol. I - Dark Fantasy</span>
+      <!-- 3. Title -->
+      <h2 class="book-title">Forsaken: To Bleed for Her</h2>
+      <!-- 4. Blurb -->
+      <p class="book-blurb">Varek Feronis was born to rule a kingdom that fears what runs in his blood. Cursed with a magic that marks him for death in a world that hunts magic users, the crown prince of Virelya has one choice: bleed quietly, or burn everything down. A story of blood, crowns, and the price of power, for readers who like their romance dangerous and their kingdoms crumbling.</p>
+      <!-- 5. Tags: as many <span class="tag"> as you like, last one can use class="tag status" -->
+      <div class="book-meta">
+        <span class="tag">Dark Fantasy</span>
+        <span class="tag">18+</span>
+        <span class="tag status">In Progress</span>
+      </div>
+    </div>
+  </article>
+  <!-- ============================================ END BOOK ENTRY ============================================ -->
+
+  <article class="book-entry">
+    <div class="book-cover-slot">
+      <img src="covers/void-and-valor-cover.png" alt="Void & Valor cover">
+      <div class="cover-placeholder" style="display:none;">Add cover image at<br>covers/void-and-valor-cover.jpg</div>
+    </div>
+    <div class="book-content">
+      <span class="eyebrow">Vol. II - Comedy Romance</span>
+      <h2 class="book-title">Void &amp; Valor</h2>
+      <p class="book-blurb">In a world where the biggest esport in existence decides who gets to be a legend, two rivals are about to discover that competition and chemistry look a lot alike. A comedy romance with a K-drama pulse and a body count of embarrassing moments, not actual bodies.</p>
+      <div class="book-meta">
+        <span class="tag">Comedy Romance</span>
+        <span class="tag">Slow Burn</span>
+        <span class="tag status">In Progress</span>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; Z. Novaine</p>
+    <div class="footer-links">
+      <a href="index.html">About</a>
+      <a href="fragments.html">Fragments</a>
+    </div>
+  </div>
+</footer>
+
+<button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+  <span class="note-icon"></span>
+  <span id="musicLabel">Play theme</span>
+</button>
+<audio id="themeAudio" src="audio/theme.mp3" loop preload="auto"></audio>
+
+<script src="site.js"></script>
+
+</body>
+</html>
